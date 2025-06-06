@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Especialista em desbloqueio de contas bancárias. Saiba como reverter bloqueios judiciais rapidamente.">
+  <meta name="keywords" content="advogado desbloqueio judicial, conta bloqueada, bloqueio bancário, execução judicial, Guilherme Maldaner">
+  <meta name="author" content="Guilherme Maldaner">
+  <title>Desbloqueio Judicial | Guilherme Maldaner</title>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <!-- Meta Pixel -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'XXXXXXXXXXXXXXX'); 
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=XXXXXXXXXXXXXXX&ev=PageView&noscript=1"/></noscript>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<style>
+  :root {
+    --cor-principal: #f4a261;
+    --cor-fundo: #1a2a40;
+    --cor-texto: #ffffff;
+    --cor-cta: #f4a261;
+    --cor-bg-secundario: #264653;
+    --fonte: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: var(--fonte);
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    scroll-behavior: smooth;
+  }
+  header {
+    background: var(--cor-bg-secundario);
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  header img {
+    max-width: 150px;
+    margin-bottom: 1rem;
+  }
+  h1, h2, h3 {
+    color: var(--cor-principal);
+    text-align: center;
+  }
+  section {
+    padding: 3rem 1rem;
+    width: 60%;
+    margin: 0 auto;
+  }
+.cta {
+  display: block;
+  padding: 1.5rem 2.5rem;
+  margin: 1.5rem 0 0 auto;
+  background: var(--cor-cta);
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  text-align: center;
+  transition: background 0.3s;
+  width: 100%;
+  max-width: 500px;
+}
+.cta:hover {
+  background: #e76f51;
+  color: #fff;
+}
+.cta.principal {
+  margin: 1.5rem auto;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  text-align: center;
+}
+.testimonial {
+  background: #2a3b55;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 80%;
+  display: none;
+  animation: fadeIn 0.5s ease-in-out;
+  margin: 0 auto;
+}
+.testimonial.active {
+  display: block;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+  .bloco {
+    margin: 2rem auto;
+    background-color: #2a3b55;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 60%;
+  }
+  .bloco .cta {
+    margin-left: auto;
+  }
+  footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: var(--cor-bg-secundario);
+    font-size: 0.9rem;
+  }
+  iframe {
+    width: 100%;
+    height: 420px;
+    border: none;
+    border-radius: 12px;
+    display: block;
+    margin: 0 auto;
+  }
+  img.responsive {
+    width: 100%;
+    border-radius: 12px;
+    margin: 2rem 0;
+  }
+  .animar {
+    visibility: hidden;
+  }
+  @media (max-width: 768px) {
+    .bloco, section {
+      width: 90%;
+    }
+    .cta {
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+  }
+</style>
+
+
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("animate__animated", "animate__fadeInUp");
+          entry.target.style.visibility = "visible";
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll(".animar").forEach(el => observer.observe(el));
+
+    document.querySelectorAll('.cta').forEach(button => {
+      button.addEventListener('click', function () {
+        if (typeof gtag !== 'undefined') {
+          gtag('event', 'click', {
+            'event_category': 'CTA',
+            'event_label': this.textContent.trim()
+          });
+        }
+      });
+    });
+
+    // Auto-slide depoimentos
+    const testimonials = document.querySelectorAll('.testimonial');
+    let currentIndex = 0;
+    function showNextTestimonial() {
+      testimonials.forEach((el, i) => el.classList.remove('active'));
+      testimonials[currentIndex].classList.add('active');
+      currentIndex = (currentIndex + 1) % testimonials.length;
+    }
+    if (testimonials.length > 0) {
+      testimonials[0].classList.add('active');
+      setInterval(showNextTestimonial, 2000);
+    }
+  });
+  </script>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Logo Guilherme Maldaner">
+    <h1>Desbloqueio de Conta Bancária</h1>
+    <p class="animate__animated animate__fadeIn">Proteja o que é seu. Saiba como reverter bloqueios judiciais indevidos agora mesmo.</p>
+    <a href="https://wa.me/5545999407719" class="cta principal animate__animated animate__pulse animate__infinite">🔓 Quero desbloquear minha conta agora</a>
+  </header>
+
+  <section class="animar">
+    <h2>🎥 Assista antes de agir</h2>
+    <iframe src="https://www.youtube.com/embed/UklUmtgCEzA" title="Desbloqueio Judicial"></iframe>
+  </section>
+
+  <section class="bloco animar">
+    <h2>❗ Por que sua conta foi bloqueada?</h2>
+    <p>Bloqueios judiciais são comuns em execuções. Mas o que muita gente não sabe é que salários, pensões, aposentadorias e rendimentos de autônomos não podem ser bloqueados por lei.</p>
+    <p>Mesmo assim, os bancos executam a ordem automaticamente. Isso pode estar afetando você injustamente.</p>
+    <a href="https://wa.me/5545999407719" class="cta">🚨 Fui bloqueado injustamente</a>
+  </section>
+
+  <section class="bloco animar">
+    <h2>📌 Casos Atendidos</h2>
+    <ul>
+      <li>Bloqueio de salário ou pensão</li>
+      <li>Conta MEI com saldo bloqueado</li>
+      <li>PIX entre contas pessoais bloqueado</li>
+    </ul>
+    <p>Todos esses casos têm solução legal rápida.</p>
+    <a href="https://wa.me/5545999407719" class="cta">✅ Esse é o meu caso</a>
+  </section>
+
+  <section class="bloco animar">
+    <h2>💬 Depoimentos Reais</h2>
+    <div class="carousel">
+      <div class="testimonial">
+        <p>“Consegui desbloquear meu salário em 3 dias. O atendimento do Dr. Guilherme foi excepcional.”</p>
+        <strong>— Marília F.</strong>
+      </div>
+      <div class="testimonial">
+        <p>“Tinha perdido esperança, mas graças à orientação jurídica consegui recuperar tudo que era meu.”</p>
+        <strong>— Carlos T.</strong>
+      </div>
+      <div class="testimonial">
+        <p>“Rápido, direto e humano. Recomendo fortemente o trabalho do Dr. Guilherme.”</p>
+        <strong>— Renata L.</strong>
+      </div>
+    </div>
+  </section>
+
+  <section class="bloco animar">
+    <h2>🧩 Como resolvemos o problema</h2>
+    <ol>
+      <li>Você envia o caso no WhatsApp</li>
+      <li>Fazemos a análise jurídica imediata</li>
+      <li>Entramos com o pedido de desbloqueio</li>
+      <li>Acompanhamos até o resultado final</li>
+    </ol>
+    <a href="https://wa.me/5545999407719" class="cta">📝 Quero enviar meu caso agora</a>
+  </section>
+
+  <section class="bloco animar">
+    <h2>🌐 Atendimento Online Seguro</h2>
+    <p>Você será atendido com total sigilo, segurança e orientação clara por um advogado experiente.</p>
+    <img src="https://images.unsplash.com/photo-1531746790731-6c087fecd65a" class="responsive" alt="Atendimento jurídico online com segurança"/>
+    <a href="https://wa.me/5545999407719" class="cta">👨‍⚖️ Começar atendimento seguro</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Guilherme Maldaner - Advogado. OAB/PR XXXXX | Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
